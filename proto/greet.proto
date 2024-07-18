@@ -3,6 +3,7 @@
     something like greet.pb.go & greet_grcp.pb.go
     so start here
 */
+// protoc --go_out=. --go-grpc_out=. proto/greet.proto
 syntax = "proto3";
 
 option go_package = "./proto";
