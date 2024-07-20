@@ -17,6 +17,7 @@ func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList)
 	}
 
 	for {
+		//receive the stream from server while it is open
 		message, err := stream.Recv()
 		if err == io.EOF {
 			break
